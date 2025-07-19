@@ -31,6 +31,6 @@ fn student(name: &str, mail: &str, grade: i32) -> Student {
 fn main() {
     let person1 = person("Alice", "alice@example.com", 30);
     let student1 = student("Bob", "bob@example.com", 90);
-    println!("Person: {:?}", person1);
-    println!("Student: {:?}", student1);
+    println!("Person: {:#?}", person1);
+    println!("Student: {:#?}", student1);
 }
