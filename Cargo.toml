@@ -10,17 +10,29 @@ name = "main"
 path = "src/main.rs"
 
 [[bin]]
-name = "3-21"
-path = "src/bin/3-21.rs"
+name = "handson-3-21"
+path = "rust-handson/3-21.rs"
 
 [[bin]]
-name = "3-22"
-path = "src/bin/3-22.rs"
+name = "handson-3-22"
+path = "rust-handson/3-22.rs"
 
 [[bin]]
-name = "3-23"
-path = "src/bin/3-23.rs"
+name = "handson-3-23"
+path = "rust-handson/3-23.rs"
 
 [[bin]]
-name = "3-24"
-path = "src/bin/3-24.rs"
+name = "handson-3-24"
+path = "rust-handson/3-24.rs"
+
+[[bin]]
+name = "handson-3-25"
+path = "rust-handson/3-25.rs"
+
+[[bin]]
+name = "handson-3-26"
+path = "rust-handson/3-26.rs"
+
+[[bin]]
+name = "handson-3-27"
+path = "rust-handson/3-27.rs"
