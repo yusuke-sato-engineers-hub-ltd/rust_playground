@@ -1,0 +1,26 @@
+[package]
+name = "rust_playground"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "3-21"
+path = "src/bin/3-21.rs"
+
+[[bin]]
+name = "3-22"
+path = "src/bin/3-22.rs"
+
+[[bin]]
+name = "3-23"
+path = "src/bin/3-23.rs"
+
+[[bin]]
+name = "3-24"
+path = "src/bin/3-24.rs"
