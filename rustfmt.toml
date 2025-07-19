@@ -2,16 +2,16 @@
 edition = "2021"
 
 # Basic formatting
-max_width = 100
-hard_tabs = false
+hard_tabs  = false
+max_width  = 100
 tab_spaces = 4
 
 # Import formatting
 imports_granularity = "Crate"
-reorder_imports = true
-reorder_modules = true
+reorder_imports     = true
+reorder_modules     = true
 
 # Other formatting options
+newline_style            = "Unix"
 use_field_init_shorthand = true
-use_try_shorthand = true
-newline_style = "Unix"
+use_try_shorthand        = true

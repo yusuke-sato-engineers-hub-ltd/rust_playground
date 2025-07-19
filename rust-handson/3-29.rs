@@ -51,10 +51,28 @@ fn student(name: &str, mail: &str, grade: i32) -> Box<dyn Print> {
 fn main() {
     let person1 = person("Alice", "alice@example.com", 30);
     let student1 = student("Bob", "bob@example.com", 90);
-    print(&person1);
-    print(&student1);
+    // Box<dyn Print>に対して、&*で参照外しをしてから&dyn Printとして渡す
+    print(&*person1);
+    print(&*student1);
 }
 
-fn print(ob: &Box<dyn Print>) {
+// &Box<dyn Print>を&dyn Printに変更すべき理由：
+// 1. 不要な間接参照
+//    - Box<dyn Print>は既にヒープ上のトレイトオブジェクトへのポインタ
+//    - &Box<dyn Print>は「ポインタへの参照」で二重の間接参照
+//    - &dyn Printで十分（直接トレイトオブジェクトへの参照）
+//
+// 2. 自動型強制
+//    - Rustは&Box<T>を自動的に&Tに変換できる（Deref trait）
+//    - つまり、&Box<dyn Print>を受け取る関数は&dyn Printでも動作する
+//
+// 3. 柔軟性
+//    - &dyn Printなら、Box以外の方法で作られたトレイトオブジェクトも受け取れる
+//    - 例：&person1（スタック上の値への参照）も渡せる
+//
+// 図解:
+// &Box<dyn Print> → &[Box] → [dyn Print]  // 2段階
+// &dyn Print      → [dyn Print]            // 1段階
+fn print(ob: &dyn Print) {
     ob.print();
 }

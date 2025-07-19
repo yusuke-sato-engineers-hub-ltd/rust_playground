@@ -48,3 +48,7 @@ path = "rust-handson/3-31.rs"
 [[bin]]
 name = "handson-3-32"
 path = "rust-handson/3-32.rs"
+
+[[bin]]
+name = "handson-3-33"
+path = "rust-handson/3-33.rs"

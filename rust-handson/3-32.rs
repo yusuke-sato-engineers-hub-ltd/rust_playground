@@ -12,6 +12,7 @@ struct Person {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Student {
     name: String,
     mail: String,
