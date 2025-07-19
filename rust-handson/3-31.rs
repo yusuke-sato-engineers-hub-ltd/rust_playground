@@ -1,4 +1,5 @@
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Person {
     name: String,
     mail: String,
@@ -14,6 +15,7 @@ fn person(name: &str, mail: &str, age: i32) -> Person {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Student {
     name: String,
     mail: String,
