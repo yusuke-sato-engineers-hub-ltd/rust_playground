@@ -1,0 +1,26 @@
+# Taplo TOML formatter configuration
+
+[formatting]
+# Align consecutive entries vertically
+align_entries = true
+
+# Put trailing commas for arrays
+array_trailing_comma = true
+
+# Expand arrays to multiple lines
+array_auto_expand = true
+
+# Maximum inline array length before expanding
+inline_table_expand = true
+
+# Always use double quotes
+quote_style = "double"
+
+# Number of spaces per indent
+indent_spaces = 2
+
+# Maximum column width
+column_width = 80
+
+# Reorder keys
+reorder_keys = true
