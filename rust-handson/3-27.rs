@@ -17,8 +17,12 @@ impl Print for Person {
     }
 }
 
-fn person(name: String, mail: String, age: i32) -> Person {
-    Person { name, mail, age }
+fn person(name: &str, mail: &str, age: i32) -> impl Print {
+    Person {
+        name: String::from(name),
+        mail: String::from(mail),
+        age,
+    }
 }
 
 struct Student {
@@ -36,16 +40,19 @@ impl Print for Student {
     }
 }
 
-fn student(name: String, mail: String, grade: i32) -> Student {
-    Student { name, mail, grade }
+fn student(name: &str, mail: &str, grade: i32) -> impl Print {
+    Student {
+        name: String::from(name),
+        mail: String::from(mail),
+        grade,
+    }
 }
 
 fn main() {
-    let person1 = person("Alice".to_string(), "alice@example.com".to_string(), 30);
-    let student1 = student("Bob".to_string(), "bob@example.com".to_string(), 90);
+    let person1 = person("Alice", "alice@example.com", 30);
+    let student1 = student("Bob", "bob@example.com", 90);
     print(&person1);
     print(&student1);
-    print(&student1); // 借用のため、同じオブジェクトを再度使用できる
 }
 
 fn print(ob: &impl Print) {
