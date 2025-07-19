@@ -1,7 +1,7 @@
 [package]
-name = "rust_playground"
-version = "0.1.0"
 edition = "2021"
+name    = "rust_playground"
+version = "0.1.0"
 
 [dependencies]
 
@@ -52,3 +52,7 @@ path = "rust-handson/3-32.rs"
 [[bin]]
 name = "handson-3-33"
 path = "rust-handson/3-33.rs"
+
+[[bin]]
+name = "handson-3-34"
+path = "rust-handson/3-34.rs"
