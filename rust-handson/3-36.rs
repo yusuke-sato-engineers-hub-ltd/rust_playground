@@ -87,14 +87,14 @@ fn main() {
     // Personインスタンスを作成
     let taro = person("Taro", "taro@example.com", 39);
     let jiro = person("Jiro", "jiro@example.com", 28);
-    
+
     // Studentインスタンスを作成
     let hanako = student("Hanako", "hanako@example.com", 22);
     let sachiko = student("Sachiko", "sachiko@example.com", 19);
-    
+
     // PersonのVecとStudentのVecを別々に作成
     // 異なる型なので、同じVecには入れられない
-    
+
     // Vec<Box<Person>>のデータ構造：
     // - Vec: 動的配列（スタック上に配置）
     // - Box<Person>: Personへのポインタ（Vecの各要素）
@@ -103,7 +103,7 @@ fn main() {
     // メモリ配置のイメージ：
     // スタック            ヒープ
     // --------           --------
-    // data_p [           
+    // data_p [
     //   ptr ─────────→ [Box] → Person { name: "Taro", ... }
     //   len: 2          [Box] → Person { name: "Jiro", ... }
     //   cap: 2
@@ -117,9 +117,9 @@ fn main() {
     // - 将来Box<dyn Print>に変更すれば、PersonとStudentを同じVecに入れられる
     let data_p: Vec<Box<Person>> = vec![taro, jiro];
     let data_s: Vec<Box<Student>> = vec![hanako, sachiko];
-    
+
     // ジェネリック関数print_allは、PersonでもStudentでも使える
     // これがジェネリクスの利点：コードの再利用
-    print_all(data_p);    // Person用のprintメソッドが呼ばれる
-    print_all(data_s);    // Student用のprintメソッドが呼ばれる
+    print_all(data_p); // Person用のprintメソッドが呼ばれる
+    print_all(data_s); // Student用のprintメソッドが呼ばれる
 }

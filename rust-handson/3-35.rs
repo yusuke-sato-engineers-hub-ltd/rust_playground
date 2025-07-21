@@ -9,7 +9,7 @@ impl<T: core::fmt::Debug> Sample<T> {
     fn print_values(&self) {
         println!("*** {} ***", &self.name);
         for item in &self.values {
-            println!("{:?}", item);
+            println!("{item:?}");
         }
     }
 }

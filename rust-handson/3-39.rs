@@ -30,7 +30,7 @@ fn mydata(name: &str) -> Mydata {
 
 fn print_all(data: Vec<Mydata>) {
     for item in data {
-        println!("{:?}", item);
+        println!("{item:?}");
     }
 }
 

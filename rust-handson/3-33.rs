@@ -14,6 +14,6 @@ fn main() {
         name: String::from("Hanako"),
         value: 1234,
     };
-    println!("Taro: {:#?}", taro);
-    println!("Hanako: {:#?}", hanako);
+    println!("Taro: {taro:#?}");
+    println!("Hanako: {hanako:#?}");
 }
