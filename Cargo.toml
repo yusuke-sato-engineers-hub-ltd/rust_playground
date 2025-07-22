@@ -12,76 +12,76 @@ path = "src/main.rs"
 
 [[bin]]
 name = "handson-3-21"
-path = "rust-handson/3-21.rs"
+path = "rust-handson/chapter-3/3-21.rs"
 
 [[bin]]
 name = "handson-3-22"
-path = "rust-handson/3-22.rs"
+path = "rust-handson/chapter-3/3-22.rs"
 
 [[bin]]
 name = "handson-3-23"
-path = "rust-handson/3-23.rs"
+path = "rust-handson/chapter-3/3-23.rs"
 
 [[bin]]
 name = "handson-3-24"
-path = "rust-handson/3-24.rs"
+path = "rust-handson/chapter-3/3-24.rs"
 
 [[bin]]
 name = "handson-3-25"
-path = "rust-handson/3-25.rs"
+path = "rust-handson/chapter-3/3-25.rs"
 
 [[bin]]
 name = "handson-3-26"
-path = "rust-handson/3-26.rs"
+path = "rust-handson/chapter-3/3-26.rs"
 
 [[bin]]
 name = "handson-3-27"
-path = "rust-handson/3-27.rs"
+path = "rust-handson/chapter-3/3-27.rs"
 
 [[bin]]
 name = "handson-3-29"
-path = "rust-handson/3-29.rs"
+path = "rust-handson/chapter-3/3-29.rs"
 
 [[bin]]
 name = "handson-3-31"
-path = "rust-handson/3-31.rs"
+path = "rust-handson/chapter-3/3-31.rs"
 
 [[bin]]
 name = "handson-3-32"
-path = "rust-handson/3-32.rs"
+path = "rust-handson/chapter-3/3-32.rs"
 
 [[bin]]
 name = "handson-3-33"
-path = "rust-handson/3-33.rs"
+path = "rust-handson/chapter-3/3-33.rs"
 
 [[bin]]
 name = "handson-3-34"
-path = "rust-handson/3-34.rs"
+path = "rust-handson/chapter-3/3-34.rs"
 
 [[bin]]
 name = "handson-3-35"
-path = "rust-handson/3-35.rs"
+path = "rust-handson/chapter-3/3-35.rs"
 
 [[bin]]
 name = "handson-3-36"
-path = "rust-handson/3-36.rs"
+path = "rust-handson/chapter-3/3-36.rs"
 
 [[bin]]
 name = "handson-3-38"
-path = "rust-handson/3-38.rs"
+path = "rust-handson/chapter-3/3-38.rs"
 
 [[bin]]
 name = "handson-3-39"
-path = "rust-handson/3-39.rs"
+path = "rust-handson/chapter-3/3-39.rs"
 
 [[bin]]
 name = "handson-3-44"
-path = "rust-handson/3-44.rs"
+path = "rust-handson/chapter-3/3-44.rs"
 
 [[bin]]
 name = "handson-3-47"
-path = "rust-handson/3-47.rs"
+path = "rust-handson/chapter-3/3-47.rs"
 
 [[bin]]
 name = "handson-3-48"
-path = "rust-handson/3-48.rs"
+path = "rust-handson/chapter-3/3-48.rs"
