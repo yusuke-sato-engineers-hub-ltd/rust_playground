@@ -93,3 +93,7 @@ path = "rust-handson/chapter-4/4-2.rs"
 [[bin]]
 name = "handson-4-4"
 path = "rust-handson/chapter-4/4-4.rs"
+
+[[bin]]
+name = "handson-4-7"
+path = "rust-handson/chapter-4/4-7.rs"
